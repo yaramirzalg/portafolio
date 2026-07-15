@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Motion Agente X</title>
+	<link type="text/css" rel="stylesheet" href="estiloprincipal.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<header class="barra">
+			<button class="menu-toggle" id="menu-toggle">
+        	☰
+    		</button>
+				<ul id="menu">
+				<section class="cuadro20">
+					<a href="exploraciones.html"><p class="titulo2">EXPLORACIONES</p></a>
+				</section>
+				<section class="cuadro20 proyectos-menu">
+					<p class="titulo2">PROYECTOS</p>
+					<div class="opciones-proyectos">
+						<a href="motions.html">Motion graphics</a>
+						<a href="ilustraciones.html">Ilustración</a>
+						<a href="fotografia.html">Fotografía</a>
+					</div>
+				</section>
+				<section class="cuadro20">
+					<a href="index.html"><img src="images/marcablanco.png" width="36%" alt="mundo"></a>
+				</section>
+				<section class="cuadro20">
+					<a href="contacto.html"><p class="titulo2">CONTACTO</p></a>
+				</section>
+				<section class="cuadro20">
+					<a href="sobremi.html"><p class="titulo2">SOBRE MI</p></a>
+				</section>
+				</ul>
+	</header>
+		
+		<section class="contenido">
+			<section class="proyecto-preview">
+				<video class="preview-video" autoplay muted loop playsinline>
+    			<source src="images/portadaagente.mp4" type="video/mp4">
+				</video>
+				<div class="preview-overlay">
+				</div>
+			</section>
+ 
+			<section class="proyecto-detalle">
+				<div class="proyecto-video-chico">
+					<video class="video-chico" muted loop playsinline onclick="togglePlay(this)">
+						<source src="images/videochicoagente.mp4" type="video/mp4" style="background-size: cover">
+					</video>
+					<button class="play-chico" aria-label="Reproducir render" onclick="togglePlay(this.previousElementSibling)">
+						<svg width="14" height="14" viewBox="0 0 18 18" fill="white">
+							<path d="M4 2.5v13l11-6.5z"/>
+						</svg>
+					</button>
+				</div>
+ 
+				<div class="proyecto-info">
+					<p class="proyecto-texto scroll-text">
+						Teaser promocional del universo de Valorant, enfocado en la creación
+						de motion graphics, animación de logo y efectos de glitch. El proyecto
+						combina transiciones entre el uso del nuevo producto VR y el videojuego
+						a partir de la composición audiovisual para construir una historia
+						alrededor del producto. Cada elemento visual fue diseñado siguiendo
+						la identidad gráfica de la marca.
+					</p>
+					<div class="proyecto-botones">
+						<a href="https://youtu.be/MSQi9WfLF4M" target="_blank" rel="noopener noreferrer" class="boton-vercompleto">VER COMPLETO</a>
+						<a href="#proceso" class="boton-explorar">Explorar proceso</a>
+					</div>
+				</div>
+			</section>
+ 
+			<section class="proceso-creativo" id="proceso">
+				<div class="proceso-texto">
+					<h2 class="titulo1 scroll-text">PROCESO CREATIVO</h2>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">Acerca del proyecto</p>
+						<p class="proceso-cuerpo scroll-text">Comunicar de manera clara y atractiva la transición de Valorant hacia una experiencia 	en realidad virtual, generando expectativa y facilitando que la audiencia comprenda el valor de esta nueva 		forma de juego por medio de una campaña publicitaria.<br>
+						</p>
+					</div>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">Reto del proyecto</p>
+						<p class="proceso-cuerpo scroll-text">Problema identificado
+							La introducción de una posible versión en realidad virtual de Valorant representa un cambio significativo. Es un problema de comunicación y posicionamiento, ya que actualmente muchos jugadores experimentan desgaste por la presión extrema en puntería y reflejos. Entonces, ahora:<br><br>
+							- Cambia el tipo de habilidad dominante.<br>
+							- Se tiene que reforzar el posicionamiento como el shooter estratégico más innovador del mercado.<br>
+							- Por lo tanto, comunicar la evolución y expansión natural del ecosistema.<br>
+						</p>
+					</div>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">ROLE</p>
+						<p class="proceso-cuerpo scroll-text">Participé en la conceptualización, edición y postproducción del teaser, colaborando desde la etapa inicial del proyecto mediante el desarrollo de dos propuestas de storyboard para definir la narrativa visual y la secuencia de las escenas. Posteriormente, realicé la edición y postproducción utilizando Adobe Premiere Pro y Adobe After Effects.
+Me encargué de construir el ritmo narrativo mediante la selección y organización de escenas, así como de integrar overlays, marcos HUD, transiciones y efectos visuales inspirados en la interfaz de Valorant. Estas decisiones contribuyeron a transmitir la sensación de inmersión, reforzar la estética futurista de la campaña y mantener una identidad visual coherente con el universo del videojuego y el concepto central de la propuesta.<br>
+						</p>
+					</div>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">COMPAÑÍA</p>
+						<p class="proceso-cuerpo scroll-text">RIOT GAMES</p>
+					</div>
+				</div>
+ 
+				<div class="proceso-grid">
+					<div class="proceso-item storyboard">
+						<p class="proceso-label">Storyboard</p>
+						<div class="proceso-img" style="background-image:url('images/storyagente.png')"></div>
+					</div>
+ 
+					<div class="proceso-item timeline">
+						<p class="proceso-label">Timeline</p>
+						<div class="proceso-video-wrap">
+							<video class="proceso-video" muted loop playsinline onclick="togglePlay(this)">
+								<source src="images/timelineagente.mp4" type="video/mp4">
+							</video>
+							<button class="play-chico" aria-label="Reproducir timeline" onclick="togglePlay(this.previousElementSibling)">
+								<svg width="14" height="14" viewBox="0 0 18 18" fill="white">
+									<path d="M4 2.5v13l11-6.5z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+ 
+					<div class="proceso-fila-doble">
+						<div class="proceso-item mini-render">
+							<p class="proceso-label">Mini render</p>
+							<div class="proceso-video-wrap">
+								<video class="proceso-video" muted loop playsinline onclick="togglePlay(this)">
+									<source src="images/minirenderagente.mp4" type="video/mp4">
+								</video>
+								<button class="play-chico" aria-label="Reproducir render" onclick="togglePlay(this.previousElementSibling)">
+									<svg width="14" height="14" viewBox="0 0 18 18" fill="white">
+										<path d="M4 2.5v13l11-6.5z"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+ 
+						<div class="proceso-item moodboard">
+							<p class="proceso-label">Moodboard</p>
+							<div class="proceso-img" style="background-image:url('images/moodboardagente.png')"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+ 
+		</section>
+		
+		<footer class="so">
+		<section class="cuadro3">
+			<img src="images/marcablanco.png" width="100px" alt="logo"> 
+			<p class="links"> Motion • Illustration • Visual Narrative <br>
+			© 2026 Itzel Luna — Diseñado y desarrollado por la autora.</p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss redes"> <a href="https://www.instagram.com/artdsire?igsh=OXppN3QyMmU5aHZh" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Instagram</a> <br> <br> <a href="https://www.behance.net/gallery/238469421/Portfolio-2025?platform=direct" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Behance</a> <br> <br> <a href="https://www.linkedin.com/in/yaraluna-diseño" target="_blank" rel="noopener noreferrer" class="linkss redes-link">LinkedIn</a> </p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss correo">Disponible para colaboraciones <br>
+			<a href="mailto:yaramirzalg@gmail.com" class="linkss correo-link">yaramirzalg@gmail.com</a></p>
+		</section>
+	</footer>
+	</main>
+	<script src="scrolltext.js"></script>
+	<script>
+		function togglePlay(video) {
+			const btn = video.nextElementSibling || video.parentElement.querySelector('.play-chico');
+			if (video.paused) {
+				video.play();
+				btn.classList.add('oculto');
+			} else {
+				video.pause();
+				btn.classList.remove('oculto');
+			}
+		}
+	</script>
+	
+		<script>
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
+</body>
+</html>

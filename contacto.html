@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contacto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="estiloprincipal.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main class="contacto">
+		<header class="contact">
+			<button class="menu-toggle" id="menu-toggle">
+        	☰
+    		</button>
+				<ul id="menu">
+				<section class="cuadro20">
+					<a href="exploraciones.html"><p class="titulo2">EXPLORACIONES</p></a>
+				</section>
+				<section class="cuadro20 proyectos-menu">
+					<p class="titulo2">PROYECTOS</p>
+					<div class="opciones-proyectos">
+						<a href="motions.html">Motion graphics</a>
+						<a href="ilustraciones.html">Ilustración</a>
+						<a href="fotografia.html">Fotografía</a>
+					</div>
+				</section>
+				<section class="cuadro20">
+					<a href="index.html"><img src="images/marcablanco.png" width="36%" alt="mundo"></a>
+				</section>
+				<section class="cuadro20">
+					<a href="contacto.html"><p class="titulo2">CONTACTO</p></a>
+				</section>
+				<section class="cuadro20">
+					<a href="sobremi.html"><p class="titulo2">SOBRE MI</p></a>
+				</section>
+				</ul>
+			
+			</header>
+			<section class="contenido-contacto">
+			<form class="formulario" action="https://www.saveform.io/api/submit/0fbdae9f-2e33-41da-9283-12a431dbd2c7" method="POST">
+					<section class="frase">
+						<p class="titulo3 entrada"> Colab? Alguna pregunta? eres amigable? Cuéntame en qué puedo ayudarte.</p>
+					</section>
+				
+					<section class="campo">
+						<input type="email" name="email" placeholder="Tu mail" class="input" required>
+					</section>
+					<section class="campo-mensaje">
+						<textarea name="message" placeholder="Tu mensaje" class="input" required></textarea>
+					</section>
+			
+			<section class="boton">
+				<button type="submit" class="boton-submit">
+					<p class="boton3">ENVIAR</p>
+				</button>
+			</section>
+			</form>
+			
+			<section class="nombre">
+				<p class="gigante entrada">YARA LUNA</p>
+			</section>
+	</section>
+
+	<footer class="cont">
+		<section class="cuadros30">
+			<img src="images/marcanegro.png" width="100px" alt="logo"> 
+			<p class="link"> Motion • Illustration • Visual Narrative <br>
+© 2026 Itzel Luna — Diseñado y desarrollado por la autora.</p>
+		</section>
+		<section class="cuadros3">
+			<p class="link redes"> <a href="https://www.instagram.com/artdsire?igsh=OXppN3QyMmU5aHZh" target="_blank" rel="noopener noreferrer" class="link redes-link">Instagram</a> <br> <br> <a href="https://www.behance.net/gallery/238469421/Portfolio-2025?platform=direct" target="_blank" rel="noopener noreferrer" class="link redes-link">Behance</a> <br> <br> <a href="https://www.linkedin.com/in/yaraluna-diseño" target="_blank" rel="noopener noreferrer" class="link redes-link">LinkedIn</a> </p>
+		</section>
+		<section class="cuadros3">
+			<p class="link correo">Disponible para colaboraciones <br>
+<a href="mailto:yaramirzalg@gmail.com" class="link correo-link">yaramirzalg@gmail.com</a></p>
+		</section>
+	</footer>
+	</main>
+	
+<script>
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
+</body>
+</html>

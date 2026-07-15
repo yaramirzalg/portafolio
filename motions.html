@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Motions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="estiloprincipal.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+			<!------------------------------------------>
+			<header class="fotogra">
+			<button class="menu-toggle" id="menu-toggle">
+        	☰
+    		</button>
+					<ul class="grphics" id="menu">
+					<section class="cuadro20">
+						<a href="exploraciones.html"><p class="titulo2">EXPLORACIONES</p></a>
+					</section>
+					<section class="cuadro20 proyectos-menu">
+						<p class="titulo2">PROYECTOS</p>
+						<div class="opciones-proyectos">
+							<a href="motions.html">Motion graphics</a>
+							<a href="ilustraciones.html">Ilustración</a>
+							<a href="fotografia.html">Fotografía</a>
+						</div>
+					</section>
+					<section class="cuadro20">
+						<a href="index.html"><img src="images/marcablanco.png" width="36%" alt="mundo"></a>
+					</section>
+					<section class="cuadro20">
+						<a href="contacto.html"><p class="titulo2">CONTACTO</p></a>
+					</section>
+					<section class="cuadro20">
+						<a href="sobremi.html"><p class="titulo2">SOBRE MI</p></a>
+					</section>
+					</ul>
+			</header>
+			
+			<!------------------------------------------>
+
+  		<section class="project-scroller">
+			
+			<!-- Columna izquierda: texto sticky -->
+			<div class="info-panel">
+			  <div class="info-content" data-project="5">
+				<h1 class="entrada">SIDE EXPLORATIONS</h1>
+				  <p class="detalles entrada"></p>
+			  </div>
+			</div>
+
+			<!-- Contador central -->
+			<div class="counter">( 2 — <span id="current">2</span> )</div>
+
+			<!-- Columna derecha: imágenes que hacen scroll -->
+			<div class="image-panel">
+			  <section class="project-frame" data-index="1">
+				<a href="motionagentex.html"><img src="images/agentex4.gif" width="100%" alt="agente X"></a>
+			  </section>
+			  <section class="project-frame" data-index="2">
+				<a href="motionsamsung.html"><img src="images/parcel8.gif" width="100%" alt="agente X"></a>
+			  </section>
+			</div>
+			
+  		</section>
+			
+			<!------------------------------------------>
+			
+			<footer>
+		<section class="cuadro30">
+			<a href="principal.html"><img src="images/Marca personal logo.png" width="100px" alt="logo"></a>
+			<p class="links"> Motion • Illustration • Visual Narrative <br>
+© 2026 Itzel Luna — Diseñado y desarrollado por la autora.</p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss redes"> <a href="https://www.instagram.com/artdsire?igsh=OXppN3QyMmU5aHZh" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Instagram</a> <br> <br> <a href="https://www.behance.net/gallery/238469421/Portfolio-2025?platform=direct" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Behance</a> <br> <br> <a href="https://www.linkedin.com/in/yaraluna-diseño" target="_blank" rel="noopener noreferrer" class="linkss redes-link">LinkedIn</a> </p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss correo">Disponible para colaboraciones <br>
+			<a href="mailto:yaramirzalg@gmail.com" class="linkss correo-link">yaramirzalg@gmail.com</a></p>
+		</section>
+	</footer>
+	</main>
+	
+	<!-- todo tu HTML aquí: header, project-scroller, footer -->
+
+  <script src="scroll-proyectos.js">
+	  const frames = document.querySelectorAll('.project-frame');
+const infoContent = document.querySelector('.info-content');
+const counter = document.getElementById('current');
+
+const projectsData = {
+  5: { title: "SIDE EXPLORATIONS", lines: ["RECOLLECTION", "OF SOME SIDE EXPLORATIONS", "I'VE BEEN POSTING ON SOCIAL MEDIA"] },
+  4: { title: "PICSART UNBORING", lines: ["CREATIVE LANDING", "PAGE FOR PICSART ABOUT", "DEVELOPPING BRAND IDENTITY"] },
+  // ...
+};
+
+	const observer = new IntersectionObserver((entries) => {
+	entries.forEach(entry => {
+    if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+      const index = entry.target.dataset.index;
+      const data = projectsData[index];
+      infoContent.querySelector('h1').textContent = data.title;
+      infoContent.querySelector('p').innerHTML = data.lines.join('<br>');
+      counter.textContent = index;
+    }
+  });
+}, { threshold: 0.5 });
+
+frames.forEach(frame => observer.observe(frame));
+	</script>
+	
+<script>
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

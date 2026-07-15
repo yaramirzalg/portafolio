@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MotionSamsung</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="estiloprincipal.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<header class="barra">
+			<button class="menu-toggle" id="menu-toggle">
+        	☰
+    		</button>
+				<ul id="menu">
+				<section class="cuadro20">
+					<a href="exploraciones.html"><p class="titulo2">EXPLORACIONES</p></a>
+				</section>
+				<section class="cuadro20 proyectos-menu">
+					<p class="titulo2">PROYECTOS</p>
+					<div class="opciones-proyectos">
+						<a href="motions.html">Motion graphics</a>
+						<a href="ilustraciones.html">Ilustración</a>
+						<a href="fotografia.html">Fotografía</a>
+					</div>
+				</section>
+				<section class="cuadro20">
+					<a href="index.html"><img src="images/marcablanco.png" width="36%" alt="mundo"></a>
+				</section>
+				<section class="cuadro20">
+					<a href="contacto.html"><p class="titulo2">CONTACTO</p></a>
+				</section>
+				<section class="cuadro20">
+					<a href="sobremi.html"><p class="titulo2">SOBRE MI</p></a>
+				</section>
+				</ul>
+	</header>
+		
+		<section class="contenido">
+			<section class="proyecto-preview">
+				<img src="images/celu.gif" width="100%"  style="opacity: 90%" alt="agente X">
+				<div class="preview-overlay">
+					<h1 class="preview-titulo entrada">Motion Samsung</h1>
+				</div>
+			</section>
+ 
+			<section class="proyecto-detalle">
+				<div class="proyecto-video-chico">
+					<video class="video-chico" muted loop playsinline onclick="togglePlay(this)">
+						<source src="images/celmotions.mp4" type="video/mp4" style="background-size: contain">
+					</video>
+					<button class="play-chico" aria-label="Reproducir render" onclick="togglePlay(this.previousElementSibling)">
+						<svg width="14" height="14" viewBox="0 0 18 18" fill="white">
+							<path d="M4 2.5v13l11-6.5z"/>
+						</svg>
+					</button>
+				</div>
+ 
+				<div class="proyecto-info">
+					<p class="proyecto-texto scroll-text">
+						Comercial promocional para Samsung Galaxy S25, desarrollado para comunicar de forma dinámica el lanzamiento del dispositivo. La pieza combina motion graphics, secuencias del producto y escenas de uso cotidiano para destacar su diseño y crear una experiencia visual atractiva para plataformas digitales.
+					</p>
+					<div class="proyecto-botones">
+						<a href="https://youtube.com/shorts/5Ofb-0J74Oo?feature=share" target="_blank" rel="noopener noreferrer" class="boton-vercompleto">VER COMPLETO</a>
+						<a href="#proceso" class="boton-explorar">Explorar proceso</a>
+					</div>
+				</div>
+			</section>
+ 
+			<section class="proceso-creativo" id="proceso">
+				<div class="proceso-texto">
+					<h2 class="titulo1 scroll-text">PROCESO CREATIVO</h2>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">Acerca del proyecto</p>
+						<p class="proceso-cuerpo scroll-text">El objetivo del proyecto fue desarrollar un comercial breve y de alto impacto visual que presentara el Samsung Galaxy S25 de forma moderna y atractiva. A través de una edición dinámica, gráficos en movimiento y una estética minimalista, la pieza busca captar la atención desde los primeros segundos y comunicar el lanzamiento del dispositivo de manera clara y contemporánea.<br>
+						</p>
+					</div>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">Reto del proyecto</p>
+						<p class="proceso-cuerpo scroll-text">El principal reto consistió en condensar la información del producto en un formato corto sin perder claridad ni atractivo visual. Fue necesario equilibrar el protagonismo del dispositivo con recursos gráficos y un ritmo de edición que mantuvieran el interés del espectador y reforzaran una estética tecnológica acorde con la identidad de la marca.<br>
+						</p>
+					</div>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">ROLE</p>
+						<p class="proceso-cuerpo scroll-text">articipé en la conceptualización y producción audiovisual del comercial, desarrollando el storyboard para definir la narrativa visual y la secuencia de las escenas. Posteriormente, realicé la edición y postproducción de la pieza utilizando Adobe Premiere Pro, Adobe After Effects y Adobe Photoshop.
+Me encargué de la creación y animación de los motion graphics, así como del desarrollo de un modelo visual del Samsung Galaxy S25 con apariencia tridimensional mediante composiciones y técnicas de animación en After Effects. También integré elementos gráficos, transiciones y efectos visuales para mantener un ritmo dinámico, reforzar la identidad tecnológica del comercial y comunicar las características del producto de manera clara y atractiva.<br>
+						</p>
+					</div>
+ 
+					<div class="proceso-bloque">
+						<p class="proceso-subtitulo scroll-text">COMPAÑÍA</p>
+						<p class="proceso-cuerpo scroll-text">SAMSUNG</p>
+					</div>
+				</div>
+ 
+				<div class="proceso-grid">
+					<div class="proceso-item storyboard">
+						<p class="proceso-label">Storyboard</p>
+						<div class="proceso-img" style="background-image:url('images/storycel.jpg')"></div>
+					</div>
+ 
+					<div class="proceso-item timeline">
+						<p class="proceso-label">Timeline</p>
+						<div class="proceso-video-wrap">
+							<video class="proceso-video" muted loop playsinline onclick="togglePlay(this)">
+								<source src="images/timelinecelular.mp4" type="video/mp4">
+							</video>
+							<button class="play-chico" aria-label="Reproducir timeline" onclick="togglePlay(this.previousElementSibling)">
+								<svg width="14" height="14" viewBox="0 0 18 18" fill="white">
+									<path d="M4 2.5v13l11-6.5z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+ 
+					<div class="proceso-fila-doble">
+						<div class="proceso-item mini-render">
+							<p class="proceso-label">Mini render</p>
+							<div class="proceso-video-wrap">
+								<video class="proceso-video" muted loop playsinline onclick="togglePlay(this)">
+									<source src="images/minirendercelular.mp4" type="video/mp4">
+								</video>
+								<button class="play-chico" aria-label="Reproducir render" onclick="togglePlay(this.previousElementSibling)">
+									<svg width="14" height="14" viewBox="0 0 18 18" fill="white">
+										<path d="M4 2.5v13l11-6.5z"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+ 
+		</section>
+		
+		<footer class="so">
+		<section class="cuadro3">
+			<img src="images/marcablanco.png" width="100px" alt="logo"> 
+			<p class="links"> Motion • Illustration • Visual Narrative <br>
+			© 2026 Itzel Luna — Diseñado y desarrollado por la autora.</p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss redes"> <a href="https://www.instagram.com/artdsire?igsh=OXppN3QyMmU5aHZh" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Instagram</a> <br> <br> <a href="https://www.behance.net/gallery/238469421/Portfolio-2025?platform=direct" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Behance</a> <br> <br> <a href="https://www.linkedin.com/in/yaraluna-diseño" target="_blank" rel="noopener noreferrer" class="linkss redes-link">LinkedIn</a> </p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss correo">Disponible para colaboraciones <br>
+			<a href="mailto:yaramirzalg@gmail.com" class="linkss correo-link">yaramirzalg@gmail.com</a></p>
+		</section>
+	</footer>
+	</main>
+	<script src="scrolltext.js"></script>
+	<script>
+		function togglePlay(video) {
+			const btn = video.nextElementSibling || video.parentElement.querySelector('.play-chico');
+			if (video.paused) {
+				video.play();
+				btn.classList.add('oculto');
+			} else {
+				video.pause();
+				btn.classList.remove('oculto');
+			}
+		}
+	</script>
+	
+<script>
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
+</body>
+</html>

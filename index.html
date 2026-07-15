@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Principal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="estiloprincipal.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+	<!--------------------------------------------------->
+	
+<body>
+	
+	<main>
+		<header>
+			<button class="menu-toggle" id="menu-toggle">
+        	☰
+    		</button>
+				<ul id="menu">
+				<section class="cuadro20">
+					<a href="exploraciones.html"><p class="titulo2">EXPLORACIONES</p></a>
+				</section>
+				<section class="cuadro20 proyectos-menu">
+					<p class="titulo2">PROYECTOS</p>
+					<div class="opciones-proyectos">
+						<a href="motions.html">Motion graphics</a>
+						<a href="ilustraciones.html">Ilustración</a>
+						<a href="fotografia.html">Fotografía</a>
+					</div>
+				</section>
+				<section class="cuadro20">
+					<a href="index.html"><img src="images/marcablanco.png" width="36%" alt="mundo"></a>
+				</section>
+				<section class="cuadro20">
+					<a href="contacto.html"><p class="titulo2">CONTACTO</p></a>
+				</section>
+				<section class="cuadro20">
+					<a href="sobremi.html"><p class="titulo2">SOBRE MI</p></a>
+				</section>
+				</ul>
+			
+				<div class="stage">
+ 
+				<div class="carrusel">
+					<div class="carrusel-item">
+						<a href="fotografia.html"><img src="images/2799.jpg" alt="Motion graphics"></a>
+						<p class="etiqueta">Fotografía</p>
+					</div>
+					<div class="carrusel-item">
+						<a href="ilustraciones.html"><img src="images/sopa2.jpg" alt="Ilustración"></a>
+						<p class="etiqueta">Ilustración digital</p>
+					</div>
+					<div class="carrusel-item">
+						<a href="motions.html"><video src="images/portadaagente.mp4" autoplay muted loop playsinline></video></a>
+						<p class="etiqueta">Motion</p>
+					</div>
+					<div class="carrusel-item">
+						<a href="fotografia.html"><img src="images/citl.jpg" alt="Branding"></a>
+						<p class="etiqueta">Fotografía</p>
+					</div>
+					<div class="carrusel-item">
+						<a href="ilustraciones.html"><img src="images/agua2.png" alt="Experimental"></a>
+						<p class="etiqueta">Ilustración digital</p>
+					</div>
+				</div>
+ 
+				</div>
+			</header>
+		
+		<!--------------------------------------------------->
+		
+	<footer>
+		<section class="cuadro30">
+			<a href="principal.html"><img src="images/Marca personal logo.png" width="100px" alt="logo"></a>
+			<p class="links"> Motion • Illustration • Visual Narrative <br>
+© 2026 Itzel Luna — Diseñado y desarrollado por la autora.</p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss redes"> <a href="https://www.instagram.com/artdsire?igsh=OXppN3QyMmU5aHZh" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Instagram</a> <br> <br> <a href="https://www.behance.net/gallery/238469421/Portfolio-2025?platform=direct" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Behance</a> <br> <br> <a href="https://www.linkedin.com/in/yaraluna-diseño" target="_blank" rel="noopener noreferrer" class="linkss redes-link">LinkedIn</a> </p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss correo">Disponible para colaboraciones <br>
+			<a href="mailto:yaramirzalg@gmail.com" class="linkss correo-link">yaramirzalg@gmail.com</a></p>
+		</section>
+	</footer>
+	</main>
+	
+
+<script>
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
+</body>
+</html>

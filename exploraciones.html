@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exploraciones</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="estiloprincipal.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+<div class="ventana-modal" id="miModal">
+  <div class="ventana-contenido">
+    <button class="ventana-cerrar" id="cerrarModal">&times;</button>
+    <video class="video-proceso1" id="videoProceso1" muted loop>
+      <source src="" type="video/mp4">
+    </video>
+    <video class="video-proceso2" id="videoProceso2" muted loop>
+      <source src="" type="video/mp4">
+    </video>
+    <p class="titulo1" id="modalTitulo"></p>
+    <p class="proyecto-texto" id="modalTexto"></p>
+    <video class="video-proceso3" id="videoProceso3" muted loop>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+</div>
+	
+<!--------------------------------------------------->
+ <main class="ilustra">
+	<header class="barra">
+		<button class="menu-toggle" id="menu-toggle">
+        	☰
+    		</button>
+				<ul id="menu">
+				<section class="cuadro20">
+					<a href="exploraciones.html"><p class="titulo2">EXPLORACIONES</p></a>
+				</section>
+				<section class="cuadro20 proyectos-menu">
+					<p class="titulo2">PROYECTOS</p>
+					<div class="opciones-proyectos">
+						<a href="motions.html">Motion graphics</a>
+						<a href="ilustraciones.html">Ilustración</a>
+						<a href="fotografia.html">Fotografía</a>
+					</div>
+				</section>
+				<section class="cuadro20">
+					<a href="index.html"><img src="images/marcablanco.png" width="36%" alt="mundo"></a>
+				</section>
+				<section class="cuadro20">
+					<a href="contacto.html"><p class="titulo2">CONTACTO</p></a>
+				</section>
+				<section class="cuadro20">
+					<a href="sobremi.html"><p class="titulo2">SOBRE MI</p></a>
+				</section>
+				</ul>
+	</header>
+	<section class="tabla">
+			
+			<section class="cuadros">
+				<section class="ilupubli">
+					<p class="titulo3 entrada">Animación 2D Rigging</p>
+					<p class="titulo1 entrada">Calaverita</p>
+					<p class="titulo3 entrada">Photoshop - After effects</p>
+					
+					<section class="boton4">
+						<p class="vermas" onclick="abrirModal(1)">VER MAS</p>
+					</section>
+				</section>
+				<img src="images/calaverita.png" width="100%" height="100%" alt="Imagen final">
+			</section>
+		
+			<section class="cuadros">
+				<section class="iluagua">
+					<p class="titulo3 entrada">Motion Gaphics</p>
+					<p class="titulo1 entrada">Comercial cereal</p>
+					<p class="titulo3 entrada">After effects</p>
+					
+					<section class="boton4">
+						<p class="vermas" onclick="abrirModal(2)">VER MAS</p> 
+					</section>
+				</section>
+				<img src="images/kirby3.gif" width="100%" height="100%" alt="Imagen final">
+			</section>
+		
+			<section class="cuadros">
+				
+			</section>
+	</section>
+		
+	<footer class="so">
+		<section class="cuadro3">
+			<img src="images/marcablanco.png" width="100px" alt="logo"> 
+			<p class="links"> Motion • Illustration • Visual Narrative <br>
+			© 2026 Itzel Luna — Diseñado y desarrollado por la autora.</p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss redes"> <a href="https://www.instagram.com/artdsire?igsh=OXppN3QyMmU5aHZh" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Instagram</a> <br> <br> <a href="https://www.behance.net/gallery/238469421/Portfolio-2025?platform=direct" target="_blank" rel="noopener noreferrer" class="linkss redes-link">Behance</a> <br> <br> <a href="https://www.linkedin.com/in/yaraluna-diseño" target="_blank" rel="noopener noreferrer" class="linkss redes-link">LinkedIn</a> </p>
+		</section>
+		<section class="cuadro3">
+			<p class="linkss correo">Disponible para colaboraciones <br>
+			<a href="mailto:yaramirzalg@gmail.com" class="linkss correo-link">yaramirzalg@gmail.com</a></p>
+		</section>
+	</footer>
+	</main>
+<!----------------------------------------------------->	
+
+<script>
+const datosIlustraciones = {
+  1: {
+    titulo: "Calaverita",
+    texto: "Este proyecto explora el desarrollo de una animación narrativa en 2D mediante una técnica de rigging en After Effects. El proceso comenzó con el diseño e ilustración de personajes, utilería y escenarios en Adobe Photoshop, donde cada elemento fue organizado en capas independientes para facilitar su posterior animación. Se implementó un sistema de rigging. La animación se complementó con movimientos de cámara, efectos de profundidad y composición por capas para generar una mayor sensación de inmersión. También se apoyó de una paleta de colores cálidos y una iluminación ambiental que refuerza la atmósfera del relato",
+    video: "images/hamster1.mp4",
+    video2: "images/hamster2.mp4",
+    video3: "images/hamster3.mp4"
+  },
+  2: {
+    titulo: "Comercial cereal",
+    texto: "Este proyecto de motion graphics explora la creación de un spot promocional para un cereal ficticio inspirado en un universo espacial y fantástico. El objetivo fue desarrollar una pieza dinámica capaz de comunicar la personalidad del producto mediante animación y composición. La propuesta se enfocaba en construir una narrativa breve en la que el empaque se convierte en el protagonista. A través de movimientos de cámara y transiciones, se busca transmitir una sensación de energía, diversión y sorpresa, reforzando la identidad visual de la marca.",
+    video: "images/kirby.mp4",
+    video2: "",
+    video3: ""
+  },
+};
+
+const modal = document.getElementById('miModal');
+const video1 = document.getElementById('videoProceso1');
+const video2 = document.getElementById('videoProceso2');
+const video3 = document.getElementById('videoProceso3');
+
+function cargarVideo(video, src) {
+  const source = video.querySelector('source');
+  if (src) {
+    source.src = src;
+    video.load();
+    video.style.display = "block";
+    video.play();
+  } else {
+    video.pause();
+    video.style.display = "none";
+  }
+}
+
+function pausarTodosLosVideos() {
+  [video1, video2, video3].forEach(v => v.pause());
+}
+
+function abrirModal(id) {
+  const data = datosIlustraciones[id];
+
+  document.getElementById('modalTitulo').textContent = data.titulo;
+  document.getElementById('modalTexto').textContent = data.texto;
+
+  cargarVideo(video1, data.video);
+  cargarVideo(video2, data.video2);
+  cargarVideo(video3, data.video3);
+
+  modal.classList.add('activo');
+}
+
+document.getElementById('cerrarModal').addEventListener('click', () => {
+  modal.classList.remove('activo');
+  pausarTodosLosVideos();
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('activo');
+    pausarTodosLosVideos();
+  }
+});
+</script>
+<script>
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
+</body>
+</html>
