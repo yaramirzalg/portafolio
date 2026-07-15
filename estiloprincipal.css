@@ -447,10 +447,10 @@ textarea:focus{
 }
 
 .sob{
-	width: 100%;
+	width: 90%;
 	height: 70px;
 	display: flex;
-	padding: 15px 0px 15px 150px;
+	padding: 15px 0px 15px 100px;
 	justify-content: center;
 	position: absolute;
 	background:  rgba(0, 0, 0, 0.3);
