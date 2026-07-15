@@ -448,9 +448,9 @@ textarea:focus{
 
 .sob{
 	width: 100%;
-	height: 120px;
+	height: 80px;
 	display: flex;
-	padding: 15px 0px 15px 150px;
+	padding: 15px 0px 15px 50px;
 	justify-content: center;
 	position: absolute;
 	background:  rgba(0, 0, 0, 0.3);
