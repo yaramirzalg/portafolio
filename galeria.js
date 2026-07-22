@@ -17,7 +17,7 @@ const datosGalerias = {
     fotos: [
       "images/rosas.jpg",
       "images/3746.jpg",
-      "images/3764.jpeg",
+      "images/3764.jpg",
       "images/3811.jpg"
     ]
   },
