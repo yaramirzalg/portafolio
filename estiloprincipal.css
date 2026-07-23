@@ -1,16 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-#loader{
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
-}
-
-#pagina{
-    visibility: hidden;
-}
-
-
 main{
 	width: 100%;
 	height: auto;
