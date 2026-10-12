@@ -637,6 +637,7 @@ li{
   flex-direction: column;
   justify-content: center;
   padding-left: 110px;
+	background: #2f26e0;
 	margin: 0;
 }
 
