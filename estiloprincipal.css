@@ -16,6 +16,7 @@ header{
 }
 
 .menu-toggle{
+	width: 100%;
     display:none;
 }
  
@@ -46,6 +47,7 @@ a{
 }
  
 .opciones-proyectos {
+	width: 100%;
     display: none;
     flex-direction: column;
     position: absolute;
