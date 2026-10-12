@@ -28,6 +28,11 @@ const observer = new IntersectionObserver((entries) => {
         infoTitle.textContent = data.title;
         infoText.innerHTML = data.lines.join('<br>');
         counter.textContent = index;
+
+         // Cambiar el color del panel según el proyecto
+    const colores = {
+        1: '#2F26E0',
+        2: '#FFE400'
       }
     }
   });
