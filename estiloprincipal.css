@@ -16,12 +16,10 @@ header{
 }
 
 .menu-toggle{
-	width: 100%;
     display:none;
 }
  
 ul{
- 
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -47,7 +45,6 @@ a{
 }
  
 .opciones-proyectos {
-	width: 100%;
     display: none;
     flex-direction: column;
     position: absolute;
