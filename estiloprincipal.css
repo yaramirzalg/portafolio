@@ -28,6 +28,7 @@ ul{
 	padding: 0px 70px 0px 80px;
 	position: absolute;
 	z-index: 10;
+	box-sizing: border-box;   /* <- esto */
 }
  
 a{
