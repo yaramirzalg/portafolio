@@ -33,7 +33,8 @@ const observer = new IntersectionObserver((entries) => {
     const colores = {
         1: '#2F26E0',
         2: '#FFE400'
-      }
+      };
+     infoPanel.style.backgroundColor = colores[index];
     }
   });
 }, {
